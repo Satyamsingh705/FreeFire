@@ -762,7 +762,7 @@
             }
         }
 
-        // Render products to the store - MODIFIED to redirect to Telegram
+        // Render products to the store - MODIFIED to redirect to WhatsApp
         function renderProducts() {
             const productsGrid = document.getElementById('productsGrid');
             productsGrid.innerHTML = '';
@@ -790,17 +790,18 @@
                 productsGrid.appendChild(productCard);
             });
             
-            // Modified event listeners to redirect to Telegram
+            // Modified event listeners to redirect to WhatsApp
             document.querySelectorAll('.buy-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const productId = parseInt(this.getAttribute('data-id'));
                     const product = products.find(p => p.id === productId);
                     
-                    // Redirect to Telegram - replace "YourTelegramUsername" with your actual username
-                    window.location.href = `https://t.me/YourTelegramUsername`;
+                    // Format phone number for WhatsApp (remove spaces and add country code)
+                    const phoneNumber = "917372858878"; // +91 73728 58878 formatted for WhatsApp URL
                     
-                    // If you want to include product info in the message, use this instead:
-                    // window.location.href = `https://t.me/YourTelegramUsername?text=I want to buy ${product.name} for $${product.price}`;
+                    // Redirect to WhatsApp with product info in the message
+                    const message = `Hi, I want to buy ${product.name} for $${product.price}`;
+                    window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 });
             });
         }
