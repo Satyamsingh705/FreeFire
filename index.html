@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Free Fire IDs | Buy Premium Accounts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #FF5722;
+            --secondary: #FF9800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --success: #4CAF50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: var(--light);
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 26, 46, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--primary);
+            font-size: 2rem;
+        }
+
+        .logo h1 {
+            background: linear-gradient(to right, #FF5722, #FF9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+        }
+
+        .admin-btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .admin-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: url('https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 26, 46, 0.7);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #FF5722, #FF9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Products Grid */
+        .products-container {
+            padding: 3rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .product-media {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.1);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--primary);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            min-height: 60px;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .buy-btn {
+            background: linear-gradient(45deg, #FF5722, #FF9800);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .buy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Admin Panel */
+        .admin-panel {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(26, 26, 46, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .admin-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .file-upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .file-upload:hover {
+            border-color: var(--primary);
+            background: rgba(255, 87, 34, 0.1);
+        }
+
+        .file-upload i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #FF5722, #FF9800);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            width: 100%;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+        }
+
+        /* Payment Page */
+        .payment-container {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(26, 26, 46, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .payment-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .payment-product {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+
+        .payment-product-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .payment-product-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .payment-product-info .price {
+            font-size: 1.5rem;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .payment-methods {
+            margin-top: 2rem;
+        }
+
+        .payment-method {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .payment-method:hover {
+            border-color: var(--primary);
+            background: rgba(255, 87, 34, 0.1);
+        }
+
+        .payment-method.active {
+            border-color: var(--primary);
+            background: rgba(255, 87, 34, 0.2);
+        }
+
+        .payment-method-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .payment-method-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .payment-method-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .payment-method-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .confirm-btn {
+            background: linear-gradient(45deg, #4CAF50, #2E7D32);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            width: 100%;
+            transition: all 0.3s;
+            margin-top: 2rem;
+        }
+
+        .confirm-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .payment-product {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Store Page -->
+    <div id="storePage">
+        <header>
+            <div class="logo">
+                <i class="fas fa-fire"></i>
+                <h1>Elite Free Fire IDs</h1>
+            </div>
+            <a href="#adminPanel" class="admin-btn">
+                <i class="fas fa-lock"></i> Admin Panel
+            </a>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Premium Free Fire Accounts</h2>
+                <p>Buy elite accounts with rare skins, characters, and diamonds at unbeatable prices!</p>
+            </div>
+        </section>
+
+        <section class="products-container">
+            <h2 class="section-title">Featured Accounts</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2023 Elite Free Fire IDs. Not affiliated with Garena.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Admin Panel (hidden by default) -->
+    <div id="adminPanel" style="display: none;">
+        <header>
+            <div class="logo">
+                <i class="fas fa-fire"></i>
+                <h1>Admin Panel</h1>
+            </div>
+            <a href="#storePage" class="admin-btn">
+                <i class="fas fa-store"></i> Back to Store
+            </a>
+        </header>
+
+        <div class="admin-panel">
+            <h2 class="admin-title">Add New Product</h2>
+            <form id="productForm">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productPrice">Price ($)</label>
+                    <input type="number" id="productPrice" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productDesc">Description</label>
+                    <textarea id="productDesc" class="form-control" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Product Image (Required)</label>
+                    <div class="file-upload" id="imageUpload">
+                        <i class="fas fa-images"></i>
+                        <p>Click to upload image</p>
+                        <input type="file" id="productImage" accept="image/*" style="display: none;" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Product Video (Optional)</label>
+                    <div class="file-upload" id="videoUpload">
+                        <i class="fas fa-video"></i>
+                        <p>Click to upload video</p>
+                        <input type="file" id="productVideo" accept="video/*" style="display: none;">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-plus-circle"></i> Add Product
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Page (hidden by default) -->
+    <div id="paymentPage" style="display: none;">
+        <header>
+            <div class="logo">
+                <i class="fas fa-fire"></i>
+                <h1>Complete Purchase</h1>
+            </div>
+        </header>
+
+        <div class="payment-container">
+            <h2 class="payment-title">Select Payment Method</h2>
+            
+            <div class="payment-product" id="paymentProductInfo">
+                <!-- Product info will be loaded here -->
+            </div>
+
+            <div class="payment-methods">
+                <div class="payment-method" id="razorpayMethod">
+                    <div class="payment-method-header">
+                        <i class="fab fa-cc-visa payment-method-icon"></i>
+                        <div class="payment-method-title">Credit/Debit Card or UPI</div>
+                    </div>
+                    <div class="payment-method-desc">Secure payment via Razorpay</div>
+                </div>
+
+                <div class="payment-method" id="paypalMethod">
+                    <div class="payment-method-header">
+                        <i class="fab fa-paypal payment-method-icon"></i>
+                        <div class="payment-method-title">PayPal</div>
+                    </div>
+                    <div class="payment-method-desc">Pay with your PayPal account</div>
+                </div>
+
+                <div class="payment-method" id="codMethod">
+                    <div class="payment-method-header">
+                        <i class="fas fa-money-bill-wave payment-method-icon"></i>
+                        <div class="payment-method-title">Cash on Delivery</div>
+                    </div>
+                    <div class="payment-method-desc">Pay after you receive the account</div>
+                </div>
+            </div>
+
+            <button class="confirm-btn" id="confirmPaymentBtn">
+                <i class="fas fa-lock"></i> Confirm Payment
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Sample products data
+        let products = [
+            {
+                id: 1,
+                name: "Mythic Bundle Account",
+                price: 49.99,
+                desc: "Includes 5 Mythic skins, 3000 diamonds, and all characters unlocked",
+                image: "/WhatsApp Image 2025-04-17 at 01.21.04.jpeg"
+            },
+            {
+                id: 2,
+                name: "Elite Pass Season 20",
+                price: 29.99,
+                desc: "Complete Elite Pass with all rewards unlocked up to level 100",
+                image: "photos\IMG_20250417_004458_374.jpg"
+            },
+            {
+                id: 3,
+                name: "Diamond Pack (5000)",
+                price: 39.99,
+                desc: "Instant delivery of 5000 diamonds to your account",
+                image: "https://www.google.com/imgres?q=free%20fire%20id&imgurl=https%3A%2F%2Fbullcdn.b-cdn.net%2Fwp-content%2Fuploads%2F2022%2F02%2Fe868d-16438568600964-1920-1024x533.jpg&imgrefurl=https%3A%2F%2Fwww.bullscore.com%2Fas-gamings-free-fire-id-stats-income-youtube-channel-and-in-february-2022%2F&docid=OaP1PJdoF-RNEM&tbnid=M8rbHq6-YNEnuM&vet=12ahUKEwiT-pPuqN2MAxXRe_UHHU5bFT4QM3oECB0QAA..i&w=1024&h=533&hcb=2&ved=2ahUKEwiT-pPuqN2MAxXRe_UHHU5bFT4QM3oECB0QAA"
+            },
+            {
+                id: 4,
+                name: "Rare Character Bundle",
+                price: 24.99,
+                desc: "Get 5 rare characters including Chrono and Skyler",
+                image: "https://via.placeholder.com/600x400?text=Character+Bundle"
+            },
+            {
+                id: 5,
+                name: "Weapon Royale Set",
+                price: 34.99,
+                desc: "Complete set of 10 legendary weapon skins",
+                image: "https://via.placeholder.com/600x400?text=Weapon+Royale"
+            },
+            {
+                id: 6,
+                name: "VIP Level 70 Account",
+                price: 59.99,
+                desc: "Prestigious VIP account with exclusive rewards",
+                image: "https://via.placeholder.com/600x400?text=VIP+Account"
+            },
+            {
+                id: 7,
+                name: "Pet Bundle Pack",
+                price: 19.99,
+                desc: "Collection of 3 rare pets with special abilities",
+                image: "https://via.placeholder.com/600x400?text=Pet+Bundle"
+            },
+            {
+                id: 8,
+                name: "Emote Collection",
+                price: 14.99,
+                desc: "20+ exclusive emotes for your character",
+                image: "https://via.placeholder.com/600x400?text=Emote+Collection"
+            },
+            {
+                id: 9,
+                name: "Beginner's Pack",
+                price: 9.99,
+                desc: "Perfect starter pack with skins, characters and 500 diamonds",
+                image: "https://via.placeholder.com/600x400?text=Beginner+Pack"
+            },
+            {
+                id: 10,
+                name: "Pro Player Account",
+                price: 79.99,
+                desc: "High-rank account with exclusive tournament rewards",
+                image: "https://via.placeholder.com/600x400?text=Pro+Account"
+            }
+        ];
+
+        // Current selected product for payment
+        let currentProduct = null;
+        let selectedPaymentMethod = null;
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load products
+            renderProducts();
+            
+            // Setup admin panel formsrc
+            document.getElementById('productForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                addProduct();
+            });
+            
+            // Setup file upload UI
+            document.getElementById('imageUpload').addEventListener('click', function() {
+                document.getElementById('productImage').click();
+            });
+            
+            document.getElementById('videoUpload').addEventListener('click', function() {
+                document.getElementById('productVideo').click();
+            });
+            
+            // Setup payment methods
+            document.querySelectorAll('.payment-method').forEach(method => {
+                method.addEventListener('click', function() {
+                    document.querySelectorAll('.payment-method').forEach(m => {
+                        m.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    selectedPaymentMethod = this.id;
+                });
+            });
+            
+            // Setup confirm payment button
+            document.getElementById('confirmPaymentBtn').addEventListener('click', function() {
+                if (!selectedPaymentMethod) {
+                    alert('Please select a payment method');
+                    return;
+                }
+                
+                if (selectedPaymentMethod === 'razorpayMethod') {
+                    alert('Redirecting to Razorpay payment gateway...');
+                    // In a real app, you would integrate Razorpay SDK here
+                } 
+                else if (selectedPaymentMethod === 'paypalMethod') {
+                    alert('Redirecting to PayPal...');
+                    // PayPal integration would go here
+                }
+                else if (selectedPaymentMethod === 'codMethod') {
+                    alert('Order placed! You will receive WhatsApp confirmation shortly.');
+                    // WhatsApp integration would go here
+                }
+            });
+            
+            // Handle navigation
+            window.addEventListener('hashchange', handleRoute);
+            handleRoute();
+        });
+
+        // Handle routing between pages
+        function handleRoute() {
+            const hash = window.location.hash.substring(1);
+            
+            document.getElementById('storePage').style.display = 'none';
+            document.getElementById('adminPanel').style.display = 'none';
+            document.getElementById('paymentPage').style.display = 'none';
+            
+            if (hash === 'adminPanel') {
+                document.getElementById('adminPanel').style.display = 'block';
+            } 
+            else if (hash === 'paymentPage') {
+                document.getElementById('paymentPage').style.display = 'block';
+            }
+            else {
+                document.getElementById('storePage').style.display = 'block';
+            }
+        }
+
+        // Render products to the store
+        function renderProducts() {
+            const productsGrid = document.getElementById('productsGrid');
+            productsGrid.innerHTML = '';
+            
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-media">
+                        <img src="${product.image}" class="product-img" alt="${product.name}">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-desc">${product.desc}</p>
+                        <div class="product-footer">
+                            <div class="product-price">$${product.price}</div>
+                            <a href="#paymentPage" class="buy-btn" data-id="${product.id}">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                `;
+                
+                productsGrid.appendChild(productCard);
+            });
+            
+            // Add event listeners to buy buttons
+            document.querySelectorAll('.buy-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    currentProduct = products.find(p => p.id === productId);
+                    updatePaymentPage();
+                });
+            });
+        }
+
+        // Update payment page with selected product
+        function updatePaymentPage() {
+            if (!currentProduct) return;
+            
+            const paymentProductInfo = document.getElementById('paymentProductInfo');
+            paymentProductInfo.innerHTML = `
+                <img src="${currentProduct.image}" class="payment-product-img" alt="${currentProduct.name}">
+                <div class="payment-product-info">
+                    <h3>${currentProduct.name}</h3>
+                    <p>${currentProduct.desc}</p>
+                    <div class="price">$${currentProduct.price}</div>
+                </div>
+            `;
+        }
+
+        // Add new product from admin panel
+        function addProduct() {
+            const name = document.getElementById('productName').value;
+            const price = parseFloat(document.getElementById('productPrice').value);
+            const desc = document.getElementById('productDesc').value;
+            const imageFile = document.getElementById('productImage').files[0];
+            
+            if (!name || !price || !desc || !imageFile) {
+                alert('Please fill all required fields');
+                return;
+            }
+            
+            // Create a preview of the image
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const newProduct = {
+                    id: products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1,
+                    name,
+                    price,
+                    desc,
+                    image: e.target.result
+                };
+                
+                // Handle video if uploaded
+                const videoFile = document.getElementById('productVideo').files[0];
+                if (videoFile) {
+                    const videoReader = new FileReader();
+                    videoReader.onload = function(e) {
+                        newProduct.video = e.target.result;
+                        completeAddProduct(newProduct);
+                    };
+                    videoReader.readAsDataURL(videoFile);
+                } else {
+                    completeAddProduct(newProduct);
+                }
+            };
+            reader.readAsDataURL(imageFile);
+        }
+
+        function completeAddProduct(product) {
+            products.push(product);
+            alert('Product added successfully!');
+            document.getElementById('productForm').reset();
+            renderProducts();
+            window.location.hash = '#storePage';
+        }
+    </script>
+</body>
+</html>
