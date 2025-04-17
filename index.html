@@ -615,21 +615,21 @@
                 name: "Mythic Bundle Account",
                 price: 49.99,
                 desc: "Includes 5 Mythic skins, 3000 diamonds, and all characters unlocked",
-                image: "/WhatsApp Image 2025-04-17 at 01.21.04.jpeg"
+                image: "https://raw.githubusercontent.com/Satyamsingh705/FreeFire/main/WhatsApp%20Image%202025-04-17%20at%2001.21.04.jpeg" // Removed leading slash
             },
             {
                 id: 2,
                 name: "Elite Pass Season 20",
                 price: 29.99,
                 desc: "Complete Elite Pass with all rewards unlocked up to level 100",
-                image: "photos\IMG_20250417_004458_374.jpg"
+                image: "https://bullcdn.b-cdn.net/wp-content/uploads/2022/02/e868d-16438568600964-1920-1024x533.jpg"
             },
             {
                 id: 3,
                 name: "Diamond Pack (5000)",
                 price: 39.99,
                 desc: "Instant delivery of 5000 diamonds to your account",
-                image: "https://www.google.com/imgres?q=free%20fire%20id&imgurl=https%3A%2F%2Fbullcdn.b-cdn.net%2Fwp-content%2Fuploads%2F2022%2F02%2Fe868d-16438568600964-1920-1024x533.jpg&imgrefurl=https%3A%2F%2Fwww.bullscore.com%2Fas-gamings-free-fire-id-stats-income-youtube-channel-and-in-february-2022%2F&docid=OaP1PJdoF-RNEM&tbnid=M8rbHq6-YNEnuM&vet=12ahUKEwiT-pPuqN2MAxXRe_UHHU5bFT4QM3oECB0QAA..i&w=1024&h=533&hcb=2&ved=2ahUKEwiT-pPuqN2MAxXRe_UHHU5bFT4QM3oECB0QAA"
+                image: "https://bullcdn.b-cdn.net/wp-content/uploads/2022/02/e868d-16438568600964-1920-1024x533.jpg" // Fixed URL
             },
             {
                 id: 4,
@@ -691,7 +691,7 @@
             // Load products
             renderProducts();
             
-            // Setup admin panel formsrc
+            // Setup admin panel forms
             document.getElementById('productForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 addProduct();
@@ -762,7 +762,7 @@
             }
         }
 
-        // Render products to the store
+        // Render products to the store - MODIFIED to redirect to Telegram
         function renderProducts() {
             const productsGrid = document.getElementById('productsGrid');
             productsGrid.innerHTML = '';
@@ -780,7 +780,7 @@
                         <p class="product-desc">${product.desc}</p>
                         <div class="product-footer">
                             <div class="product-price">$${product.price}</div>
-                            <a href="#paymentPage" class="buy-btn" data-id="${product.id}">
+                            <a href="javascript:void(0);" class="buy-btn" data-id="${product.id}">
                                 <i class="fas fa-shopping-cart"></i> Buy Now
                             </a>
                         </div>
@@ -790,12 +790,17 @@
                 productsGrid.appendChild(productCard);
             });
             
-            // Add event listeners to buy buttons
+            // Modified event listeners to redirect to Telegram
             document.querySelectorAll('.buy-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const productId = parseInt(this.getAttribute('data-id'));
-                    currentProduct = products.find(p => p.id === productId);
-                    updatePaymentPage();
+                    const product = products.find(p => p.id === productId);
+                    
+                    // Redirect to Telegram - replace "YourTelegramUsername" with your actual username
+                    window.location.href = `https://t.me/YourTelegramUsername`;
+                    
+                    // If you want to include product info in the message, use this instead:
+                    // window.location.href = `https://t.me/YourTelegramUsername?text=I want to buy ${product.name} for $${product.price}`;
                 });
             });
         }
